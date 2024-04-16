@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random color generator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="create-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -16,18 +16,24 @@
     </div>
     <div class="main">
         <div class="heading">
-            <h1>Random Color Generator</h1>
-            <a href="create.html"><p>Wanna create your own color? Click here.</p></a>
-
+            <h1>Color Creator</h1>
+            <a href="index.html"><p>Wanna generate random colors? Click here.</p></a>
         </div>
         <div class="generator">
             <div class="color-div">
                 <div class="color"></div>
-                <div class="name"></div>
-                <div class="hex"></div>
+                <form id="form" action="">
+                    <p>r</p>
+                    <input type="number" class="red" name="red">
+                    <p>g</p>
+                    <input type="number" class="green" name="green">
+                    <p>b</p>
+                    <input type="number" class="blue" name="blue">
+                </form>
+                <div class="msg"><p></p></div>
             </div>
             <div class="button-div">
-                <button class="btn gen-btn">Generate a random color</button>
+                <button class="create-btn btn">Create Color</button>
             </div>
         </div>
 
@@ -46,6 +52,6 @@
         
     </div>
     </section>
-<script src="script.js"></script>
+<script src="create-script.js"></script>
 </body>
 </html>
